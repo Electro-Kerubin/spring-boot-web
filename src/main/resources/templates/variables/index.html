@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title th:text="${titulo}">Enviar parámetro rel Request HTTP GET - URL</title>
+</head>
+<body>
+	<h1 th:text="${titulo}"></h1>
+	<ul>
+		<li><a th:href="@{/variables/string/} + 'PARAMETRO_1'">/variables/string/PARAMETRO_1</a></li>
+		<li><a th:href="@{/variables/string/} + 'PARAMETRO_2'">/variables/string/PARAMETRO_2</a></li>
+		<li><a th:href="@{/variables/string/} + 'PARAMETRO_3' + '/' + @{'12'}">/variables/string/PARAMETRO_3/12</a></li>
+	</ul>
+</body>
+</html>
